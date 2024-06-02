@@ -57,12 +57,12 @@ public class BusBooking {
 		WebElement travelName = driver.findElement(By.xpath("//div[text()='SK Balu Bus']"));
 		WebElement departureTime = driver.findElement(By.xpath("//div[text()='06:00']"));
 		WebElement arrivalTime = driver.findElement(By.xpath("//div[text()='12:30']"));
+		WebElement price = driver.findElement(By.xpath("//span[text()='502']"));
 		
 		String travelnametext = travelName.getText();
 		String departureTime1Text= departureTime.getText();
 		String arrivalTimeText = arrivalTime.getText();
-		System.out.println(travelnametext+" "+departureTime1Text+" "+arrivalTimeText);
-//		System.out.println(departureTime1Text);
-//		System.out.println(arrivalTimeText);
+		String priceText = price.getText();
+		System.out.println(travelnametext+" "+departureTime1Text+" "+arrivalTimeText+" "+priceText);
 	}
 }
